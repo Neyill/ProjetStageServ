@@ -18,9 +18,9 @@ let mainWindow;
 
 function createWindow () {
 
-  mainWindow = new BrowserWindow({width: 1800, height: 1200});
+  mainWindow = new BrowserWindow({width: 1000, height: 1200});
 
-  mainWindow.loadURL(`/home/cwschlachter/Desktop/FormulaireAbsence/index.html`);
+  mainWindow.loadURL(`/home/cwschlachter/Desktop/ProjetStageServ/FormulaireAbsence/index.html`);
 
   mainWindow.on('closed', () => {
     mainWindow = null;
