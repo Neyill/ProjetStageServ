@@ -4,7 +4,7 @@
   "description": "A Vue.js project",
   "author": "cwschlachter <cwschlachter@jnesis.com>",
   "private": true,
-  "main": "serv.js",
+  "main": "main.js",
   "scripts": {
     "dev": "node build/dev-server.js",
     "build": "rimraf dist && mkdirp dist && ncp static dist/static && cross-env NODE_ENV=production webpack --progress --hide-modules --config build/webpack.prod.conf.js",
@@ -15,12 +15,15 @@
   "dependencies": {
     "electron-rebuild": "^1.6.0",
     "jQuery": "^1.7.4",
+    "jquery": "^3.2.1",
     "jsdom": "^11.3.0",
     "location": "0.0.1",
     "moment": "^2.12.0",
     "moment-range": "^2.2.0",
     "navigator": "^1.0.1",
     "vue": "^1.0.17",
+    "vue-electron": "^1.0.6",
+    "webpack-dev-server": "^2.9.4",
     "xmlhttprequest": "^1.8.0"
   },
   "devDependencies": {

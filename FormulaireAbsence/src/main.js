@@ -1,14 +1,15 @@
 import Vue from 'vue'
-import TableauComponent from './components/tableau/tableau.vue'
-import BarreMenuComponent from './components/barremenu/barremenu.vue'
+import TabComponent from './components/tab/tab.vue'
+import NavbarComponent from './components/navbar/navbar.vue'
 import ModalDemandeAbsenceComponent from './components/modalabsence/modalabsence.vue'
 
 /* eslint-disable no-new */
 new Vue({
+  name: 'navbar',
   el: 'body',
   components: {
-    tableau: TableauComponent,
-    barremenu: BarreMenuComponent,
+    tab: TabComponent,
+    navbar: NavbarComponent,
     modalabsence: ModalDemandeAbsenceComponent
   }
 })

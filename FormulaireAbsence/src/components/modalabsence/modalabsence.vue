@@ -19,15 +19,6 @@
               <legend></legend>
               <div class="form-group row" >
                 <label class="col-sm-3 ">Du :</label>
-                        <?php
-// indiqué le chemin de votre fichier JSON, il peut s'agir d'une URL
-$json = file_get_contents('../../../absence.json');
-
-var_dump(json_decode($json));
-?>
-
-
-
                 <div class="col-sm-6">
                   <datepickerdebut id="dateDebut" format="DD-MM-YYYY" name="end"></datepickerdebut>
                 </div>
@@ -46,7 +37,7 @@ var_dump(json_decode($json));
                   </select>
                 </div>
               </div>
-              <div class="form-group row" > 
+              <div class="form-group row" >
                 <label class="col-sm-3 col-form-label">Mot :</label>
                 <div class="col-md-6">
                   <textarea class="mot" id="mot" v-model="mot" row="3">{{ mot }}</textarea>
@@ -58,7 +49,7 @@ var_dump(json_decode($json));
           <div class="modal-footer">
             <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
             <div id="validate">
-              <button type="button" class="btn btn-success" @click="validation(this.form)">Valider</button>
+              <button type="button" class="btn btn-success" data-dismiss="modal" @click="validation(this.form)">Valider</button>
             </div>
           </div>
       </div>
